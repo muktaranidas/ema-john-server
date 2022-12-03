@@ -45,6 +45,13 @@ async function run() {
       const products = await cursor.toArray();
       res.send(products);
     });
+
+    // addProduct
+    app.post("/addProduct", async (req, res) => {
+      // const user = req.body;
+      // const result = await productCollection.insertOne(user);
+      // res.send(result);
+    });
   } finally {
   }
 }
